@@ -1,2 +1,5 @@
 # Payment-Gateway-Simulator
-Digital Payment Gateway Simulator - Project to simulate the information security that is used
+
+Simulates the information security that is used.
+
+SHA256 + Salting, 2FA, Data Encryption 
