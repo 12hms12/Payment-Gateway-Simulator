@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 10px; /* Changed from default; add this line to line 6 */
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 1%; 
+}
+
+form {
+    max-width: 400px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="date"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.toggle_btn {
+    cursor: pointer;
+    color: #007BFF;
+    font-size: 14px;
+    margin-left: 15px;
+    user-select: none;
+}
+
+/* For Links and Clickable Elements */
+.signUpButton {
+    color: #007BFF;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Bottom Links Styling */
+.bottom-links p {
+    display: flex;
+    justify-content: center; /* Centers the content */
+    align-items: center;
+    gap: 10px; /* Adjust spacing between links */
+    margin: 10px auto;
+}
+
+
+.signUpButton:hover {
+    text-decoration: underline;
+}
+
+/* Page-Specific Styles */
+#signIn {
+    background-color: #28a745;
+}
+
+#signIn:hover {
+    background-color: #218838;
+}
+
+#sendMoney {
+    background-color: #FF6347;
+}
+
+#sendMoney:hover {
+    background-color: #cc523b;
+}
+
+p {
+    text-align: center;
+}
+
+
+.signUpButton,
+.forgotPasswordButton {
+    color: #007BFF;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0;
+}
+
+.signUpButton:hover,
+.forgotPasswordButton:hover {
+    text-decoration: underline;
+}
+
+
+/* OTP Container */
+.otp-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #cccccc;
+}
+
+p {
+    margin-top: 10px;
+}
+
+#countdown-message {
+    font-size: 14px;
+    color: #555;
+}
+
+.g-recaptcha {
+    margin-bottom: 20px; /* Add this line at the end of the file */
+    justify-content: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="date"] {
+    width: 90%; /* Change width from `calc(100% - 22px)` to `90%` */
+    max-width: 350px; /* Optional: set a max width to limit input field size */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Specific styling for After Sign In page */
+.after-sign-in-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Centering container within viewport */
+    text-align: center;
+}
+
+.after-sign-in-container p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.after-sign-in-container button {
+    width: 80%;
+    max-width: 300px;
+    padding: 15px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px 0; /* Vertical spacing between buttons */
+}
+
+.after-sign-in-container button:hover {
+    background-color: #0056b3;
+}
+
+
+/* User Details Section Styling */
+.user-details-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 18px;
+}
+
+.user-details-container p {
+    margin-bottom: 10px;
+}
+
+.user-details-container strong {
+    color: #007BFF;
+}
