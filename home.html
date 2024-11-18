@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxpay: Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="after-sign-in-container">
+        <!-- Show user details here -->
+        <p>Signed In</p>
+        <div id="userID"></div>
+        <button id="pay" onclick="transferMoney()">Transfer Money</button>
+        <!-- <button id="balance" onclick="checkBalance()">Check Balance</button> -->
+        <button id="user_details" onclick="showUserDetails('')">User Details</button>
+    </div>
+    <script src="homeFunctions.js"></script>
+</body>
+</html>

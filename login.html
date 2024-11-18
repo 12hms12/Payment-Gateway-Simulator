@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxpay</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <h1>WELCOME TO FLUXPAY</h1>
+    <h4>Sign In</h4>
+    <form id="submit_form" onsubmit="event.preventDefault(); login();">
+        <label for="f_id">Flux ID</label>
+        <input type="text" name="Flux ID" id="f_id" placeholder="Enter your Flux ID">
+        <br>
+        <label for="pswd">Password</label>
+        <br>       
+        <input type="password" name="Password" id="pswd" placeholder="Enter your password">
+        <span class="toggle_btn" onclick="togglePassword()">Show</span>
+        <br>
+        <br>
+        <div class="g-recaptcha" data-sitekey="" data-callback="enableSubmit"></div>
+        <button id="signIn" type="submit" disabled>Sign In</button>
+    </form>
+    <div class="bottom-links">
+        <p>
+            Don't have an account?
+            <span class="signUpButton" onclick="openSignUp()">Sign Up</span>
+            <span class="forgotPasswordButton" onclick="openForgotPassword()">Forgot Password</span>
+        </p>
+    </div>
+    
+    <script src="/login.js"></script>
+
+    <script>
+        // Enable the Sign In button when reCAPTCHA is validated
+        function enableSubmit() {
+            const submitButton = document.getElementById("signIn");
+            submitButton.disabled = false; // Enable the button
+        }
+
+        // Optional: Disable the submit button when reCAPTCHA is not validated
+        function onRecaptchaExpire() {
+            const submitButton = document.getElementById("signIn");
+            submitButton.disabled = true; // Disable the button
+        }
+    </script>
+</body>
+</html>
